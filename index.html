@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoa Sáp Thơm - Món quà ý nghĩa và độc đáo</title>
+    <meta name="description" content="Cửa hàng hoa sáp thơm chất lượng cao, bền đẹp và thơm lâu">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Hoa Sáp.png">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Hoa Sáp.png" alt="Logo Công Ty" style="height: 50px;">
+                    </a>
+                </div>
+                
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Trang Chủ</a></li>
+                        <li><a href="products.html">Sản Phẩm</a></li>
+                        <li><a href="https://www.facebook.com/hoasapsacmaudep" target="_blank">Giới Thiệu</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button><i class="fa-solid fa-search"></i></button>
+                    </div>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="login.html" class="btn btn-primary">Đăng Nhập</a>
+                </div>
+                
+                <button class="mobile-menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-spa"></i>
+                    <span>Hoa Sáp Thơm</span>
+                </a>
+            </div>
+            <button class="mobile-menu-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Trang Chủ</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-actions">
+            <a href="cart.html" class="btn btn-outline">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Giỏ Hàng
+            </a>
+            <a href="login.html" class="btn btn-primary">Đăng Nhập</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate-fade-in">Hoa Sáp Thơm Vĩnh Cửu</h1>
+                    <p class="animate-fade-in delay-200">Món quà ý nghĩa và độc đáo cho người thân yêu của bạn. Hoa sáp thơm bền đẹp, không cần chăm sóc.</p>
+                    <div class="hero-buttons animate-fade-in delay-400">
+                        <a href="products.html" class="btn btn-primary">Mua Ngay</a>
+                        <a href="about.html" class="btn btn-outline">
+                            Tìm Hiểu Thêm
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate-scale-in">
+                    <img src="https://i0.wp.com/tiemhoabonmua.com/wp-content/uploads/2022/02/hoa-sap-19-bong-mau-hong.jpg?fit=806%2C505&ssl=1" alt="Hoa sáp thơm" onerror="this.src='images/placeholder.jpg'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sản Phẩm Nổi Bật</h2>
+                <p>Khám phá bộ sưu tập hoa sáp thơm độc đáo và tinh tế của chúng tôi</p>
+            </div>
+            
+            <div class="products-grid" id="featured-products">
+                <!-- Products will be loaded here via JavaScript -->
+            </div>
+            
+            <div class="text-center">
+                <a href="products.html" class="btn btn-primary">
+                    Xem tất cả sản phẩm
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ưu Điểm Của Hoa Sáp</h2>
+                <p>Tại sao nên chọn hoa sáp thơm thay vì hoa tươi?</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+                    <h3>Hương Thơm Lâu Dài</h3>
+                    <p>Hương thơm dịu nhẹ, tự nhiên và bền lâu đến hàng năm</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-droplet-slash"></i>
+                    </div>
+                    <h3>Không Cần Chăm Sóc</h3>
+                    <p>Không cần tưới nước, không héo úa, luôn giữ vẻ đẹp tươi mới</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h3>Quà Tặng Hoàn Hảo</h3>
+                    <p>Món quà ý nghĩa cho người thân, bạn bè và đối tác</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Khách Hàng Nói Gì?</h2>
+                <p>Những đánh giá từ khách hàng đã trải nghiệm sản phẩm của chúng tôi</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote>
+                        "Tôi đã tặng bó hoa sáp này cho mẹ nhân ngày sinh nhật. Mẹ tôi rất thích và đặc biệt ấn tượng với hương thơm dịu nhẹ và vẻ đẹp bền lâu của hoa."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Lương Quốc Thái</h4>
+                            <p>TP. HỒ CHÍ MINH</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote>
+                        "Đã mua hoa sáp trang trí văn phòng được hơn 1 năm và vẫn giữ nguyên vẻ đẹp. Tiết kiệm được chi phí mua hoa tươi hàng tuần và không gian luôn thơm mát."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Nguyễn Thị Ngọc Hòa</h4>
+                            <p>TP. Cam Ranh</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote>
+                        "Tôi đã mua hoa sáp làm quà cưới cho bạn thân. Cô dâu chú rể rất thích và đánh giá cao món quà độc đáo này. Sẽ tiếp tục ủng hộ shop!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Thái Hòa</h4>
+                            <p>Đà Nẵng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="section-header">
+                <h2>Đăng Ký Nhận Tin</h2>
+                <p>Đăng ký để nhận thông tin về sản phẩm mới, khuyến mãi và mẹo chăm sóc hoa sáp</p>
+            </div>
+            
+            <form class="newsletter-form" id="newsletter-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Nhập email của bạn" required>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Đăng ký
+                    </button>
+                </div>
+                <p class="form-note">
+                    Chúng tôi tôn trọng quyền riêng tư của bạn. Xem 
+                    <a href="privacy-policy.html">Chính sách bảo mật</a>.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="Hoa Sáp.png" alt="Logo Công Ty" style="height: 50px;">
+                        </a>
+                    </div>
+                    <p>Chuyên cung cấp các sản phẩm hoa sáp thơm chất lượng cao, bền đẹp và thơm lâu.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Sản Phẩm</h3>
+                    <ul>
+                        <li><a href="products.html?category=hoa-hong">Hoa Hồng Sáp</a></li>
+                        <li><a href="products.html?category=hoa-tulip">Hoa Tulip Sáp</a></li>
+                        <li><a href="products.html?category=hoa-cam-tu-cau">Hoa Cẩm Tú Cầu</a></li>
+                        <li><a href="products.html?category=hoa-lily">Hoa Lily Sáp</a></li>
+                        <li><a href="products.html?category=bo-hoa-ket-hop">Bó Hoa Kết Hợp</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Thông Tin</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/hoasapsacmau" target="_blank">Giới Thiệu</a></li>
+                        <li><a href="shipping-policy.html">Chính Sách Vận Chuyển</a></li>
+                        <li><a href="return-policy.html">Chính Sách Đổi Trả</a></li>
+                        <li><a href="terms-of-service.html">Điều Khoản Dịch Vụ</a></li>
+                        <li><a href="privacy-policy.html">Chính Sách Bảo Mật</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên Hệ</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Đường Võ Thị Sáu, Phường Thống Nhất, Biên Hòa, Đồng Nai</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0123456789</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>hoasacmau@gmail.com.vn</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Hoa Sáp Thơm. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

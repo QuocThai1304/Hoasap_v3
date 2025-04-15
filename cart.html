@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Hoa Sáp Thơm</title>
+    <meta name="description" content="Giỏ hàng của bạn tại Hoa Sáp Thơm">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Hoa Sáp.png">
+
+</head>
+<body>
+   <!-- Header / Navbar -->
+   <header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Hoa Sáp.png" alt="Logo Công Ty" style="height: 50px;">
+                </a>
+            </div>
+            
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Trang Chủ</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="https://www.facebook.com/hoasapsacmaudep" target="_blank">Giới Thiệu</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <button><i class="fa-solid fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="login.html" class="btn btn-primary">Đăng Nhập</a>
+            </div>
+            
+            <button class="mobile-menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-spa"></i>
+                    <span>Hoa Sáp Thơm</span>
+                </a>
+            </div>
+            <button class="mobile-menu-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-actions">
+            <a href="cart.html" class="btn btn-outline active">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Giỏ Hàng
+            </a>
+            <a href="login.html" class="btn btn-primary">Đăng Nhập</a>
+        </div>
+    </div>
+
+    <!-- Cart Page Content -->
+    <main class="cart-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Giỏ Hàng</h1>
+                <a href="products.html" class="back-link">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    Tiếp tục mua sắm
+                </a>
+            </div>
+
+            <div class="cart-content" id="cart-content">
+                <!-- Cart content will be loaded here via JavaScript -->
+            </div>
+
+            <div class="empty-cart" id="empty-cart" style="display: none;">
+                <div class="empty-cart-content">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h2>Giỏ hàng của bạn đang trống</h2>
+                    <p>Hãy thêm sản phẩm vào giỏ hàng để tiến hành thanh toán</p>
+                    <a href="products.html" class="btn btn-primary">Tiếp tục mua sắm</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="Hoa Sáp.png" alt="Logo Công Ty" style="height: 50px;">
+                        </a>
+                    </div>
+                    <p>Chuyên cung cấp các sản phẩm hoa sáp thơm chất lượng cao, bền đẹp và thơm lâu.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Sản Phẩm</h3>
+                    <ul>
+                        <li><a href="products.html?category=hoa-hong">Hoa Hồng Sáp</a></li>
+                        <li><a href="products.html?category=hoa-tulip">Hoa Tulip Sáp</a></li>
+                        <li><a href="products.html?category=hoa-cam-tu-cau">Hoa Cẩm Tú Cầu</a></li>
+                        <li><a href="products.html?category=hoa-lily">Hoa Lily Sáp</a></li>
+                        <li><a href="products.html?category=bo-hoa-ket-hop">Bó Hoa Kết Hợp</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Thông Tin</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/hoasapsacmau" target="_blank">Giới Thiệu</a></li>
+                        <li><a href="shipping-policy.html">Chính Sách Vận Chuyển</a></li>
+                        <li><a href="return-policy.html">Chính Sách Đổi Trả</a></li>
+                        <li><a href="terms-of-service.html">Điều Khoản Dịch Vụ</a></li>
+                        <li><a href="privacy-policy.html">Chính Sách Bảo Mật</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên Hệ</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Đường Võ Thị Sáu, Phường Thống Nhất, Biên Hòa, Đồng Nai</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0123456789</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>hoasacmau@gmail.com.vn</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Hoa Sáp Thơm. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
