@@ -5,5 +5,6 @@ Trang web bán hàng đơn giản với các trang:
 - Giỏ hàng
 - Chi tiết sản phẩm
 - Thanh toán
+- Hệ thống bán hàng
 
 Sử dụng: HTML, CSS, JavaScript
